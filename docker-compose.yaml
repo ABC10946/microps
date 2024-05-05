@@ -1,0 +1,6 @@
+services:
+  microps:
+    build: .
+    volumes:
+      - ./:/microps
+    tty: true
