@@ -1,0 +1,10 @@
+services:
+  microps:
+    build: .
+    volumes:
+      - ./:/microps
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
